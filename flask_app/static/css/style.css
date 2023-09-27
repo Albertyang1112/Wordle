@@ -1,0 +1,120 @@
+body{
+    animation: fadeIn 0.3s ease;
+}
+
+#popup {
+    display: none;
+    animation: fadeInOut 0.3s ease;
+}
+
+#popup.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+#signInPopup{
+    display: none;
+    animation: fadeInOut 0.3s ease;
+}
+
+#signInPopup.active{
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+#signUpPopup{
+    display: none;
+    animation: fadeInOut 0.3s ease;
+}
+
+#signUpPopup.active{
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+#openPopupBtn{
+    display: none;
+    animation: fadeInOut 0.3s ease;
+}
+
+#openPopupBtn.active{
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+#playAgain{
+    display: none;
+    animation: fadeInOut 0.3s ease;
+}
+
+#playAgain.active{
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.letter-box {
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.filled-box {
+    border: 2px solid darkgray;
+}
+
+.letter-row {
+    display: flex;
+}
+
+#keyboard-cont {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keyboard-cont div {
+    display: flex;
+}
+
+.second-row {
+    margin: 0.5rem 0;
+}
+
+.keyboard-button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 2px;
+    height:58px;
+    min-width: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    background-color: #818384;
+}
+
+#stats{
+    display: flex;
+    flex: 1;
+}

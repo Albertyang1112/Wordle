@@ -1,0 +1,36 @@
+body{
+    font-family: 'Oswald', san-serif;
+}
+
+#howToPlayPopup {
+    display: none;
+    animation: fadeInOut 0.3s ease;
+}
+
+#howToPlayPopup.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#exBox{
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
